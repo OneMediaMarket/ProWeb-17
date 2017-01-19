@@ -28,7 +28,6 @@
 		@mixin atSmall{
 			margin-top: 1em;
 			font-size: 1.875rem;
-			-ms-text-align-last: auto;
 			text-align: left;
 		}
 
