@@ -16,7 +16,8 @@ class StickeyHeader {
 	}
 
 	refreshWaypoints(){
-		this.lazyImages(function(){
+		//this.lazyImages.load(function(){
+      this.lazyImages.on('load', function(){
 			Waypoint.refreshAll();
 		});
 	}
@@ -72,3 +73,4 @@ class StickeyHeader {
 }
 
 export default StickeyHeader;
+

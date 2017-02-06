@@ -11221,7 +11221,8 @@
 		_createClass(StickeyHeader, [{
 			key: 'refreshWaypoints',
 			value: function refreshWaypoints() {
-				this.lazyImages(function () {
+				//this.lazyImages.load(function(){
+				this.lazyImages.on('load', function () {
 					Waypoint.refreshAll();
 				});
 			}
